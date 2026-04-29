@@ -1,7 +1,6 @@
 import LandingNavbar from "@/components/landing/LandingNavbar";
 import SvgDefs from "@/components/landing/SvgDefs";
-import UploadSection from "@/components/demo/UploadSection";
-import ResultsSection from "@/components/demo/ResultsSection";
+import DemoFlow from "@/components/demo/DemoFlow";
 
 export default function DemoPage() {
   return (
@@ -20,13 +19,12 @@ export default function DemoPage() {
               <span className="eyebrow"><span className="dot" /> Live demo</span>
               <h1>Upload your data</h1>
               <p>
-                Drop a well log file (LAS, CSV) and Flowsight will return interpretation,
-                anomaly detection, and decision recommendations.
+                Drop a well log file (LAS, CSV) and Flowsight will run the full
+                interpretation pipeline — five stages, end-to-end.
               </p>
             </div>
 
-            <UploadSection />
-            <ResultsSection />
+            <DemoFlow />
           </div>
         </main>
       </div>
